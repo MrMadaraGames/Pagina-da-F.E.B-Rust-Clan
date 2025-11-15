@@ -1,0 +1,45 @@
+#midia {
+    padding: 40px 20px;
+}
+
+#midia h2, 
+#midia h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Vídeo responsivo */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding-bottom: 56.25%; /* proporção 16:9 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
